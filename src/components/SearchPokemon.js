@@ -11,7 +11,7 @@ const SearchPokemon = () => {
 
   const handleSubmit = async () => {
     const res = await axios.get(url + text.toLowerCase());
-    const image = res.data.sprites.other.dream_world.front_default;
+    const image =res.data.sprites.other.dream_world.front_default;
     setPokemon(res.data.name);
     setPokeImage(image);
     setType(res.data.types[0].type.name)
