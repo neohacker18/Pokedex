@@ -35,7 +35,6 @@ export const GetNames = () => {
   return (
     <div className="hero-names">
       <h1>Pokemon Evolution</h1>
-      
       <div className="pokemon-container">
         <div className="all-container">
           {allPokemons.map((pokemonStats, index) => (
